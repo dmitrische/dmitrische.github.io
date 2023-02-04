@@ -1,0 +1,16 @@
+---
+title: Welcome to DmitriSche's blog!
+comments: false
+format: 
+  html:
+    page-layout: full
+listing: 
+  - id: posts
+    contents: posts
+    sort: 
+      - "date desc"
+      - "title asc"
+    categories: true
+---
+
+Blog posts coming!

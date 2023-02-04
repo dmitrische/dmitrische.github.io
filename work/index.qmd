@@ -1,0 +1,15 @@
+---
+title: Portfolio
+comments: false
+listing:
+    - id: projects
+      contents: projects
+format:
+    html:
+        page-layout: full
+---
+
+Here you will (eventually) find various projects of mine.
+
+:::{#projects}
+:::

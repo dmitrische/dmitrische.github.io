@@ -1,0 +1,44 @@
+---
+title: Dmitri's corner
+comments: False
+format:
+  html:
+    page-layout: full
+
+listing:
+  - id: landing-posts
+    contents: blog/posts
+    type: default
+    max-items: 3
+    sort:
+      - "date desc"
+      - "title asc"
+  - id: landing-projects
+    contents: work/projects
+    type: grid
+    max-items: 6
+    grid-columns: 3
+    sort: 
+      - "date desc"
+      - "title asc"
+
+about:
+  id: about-dmitrische
+  template: jolla
+  image: images/potty.jpg
+  image-shape: round 
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/dmitrische
+    - icon: google
+      text: Scholar
+      href: https://scholar.google.co.nz/citations?user=_qsXyxkAAAAJ&hl=en
+    - icon: envelope
+      text: Email
+      href: mailto:dmitri.schebarchov@gmail.com
+---
+
+:::{#about-dmitrische}
+Hello World! More about me [here](about.qmd). My blogposts are [here](blog/index.qmd) and projects are [here](work/index.qmd)
+:::
