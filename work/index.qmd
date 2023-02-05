@@ -1,5 +1,5 @@
 ---
-title: Portfolio
+title: Project Portfolio
 comments: false
 listing:
     - id: projects
@@ -9,7 +9,7 @@ format:
         page-layout: full
 ---
 
-Here you will (eventually) find various projects of mine.
+Here you will (eventually) find a collection of projects I have worked on.
 
 :::{#projects}
 :::

@@ -15,8 +15,8 @@ website:
         text: Blog
         href: blog/index.qmd
       - icon: sliders2
-        text: Portfolio
-        href: portfolio/index.qmd
+        text: Work
+        href: work/index.qmd
       - icon: file-person
         text: About
         href: about.qmd
