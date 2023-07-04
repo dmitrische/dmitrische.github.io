@@ -1,5 +1,5 @@
 ---
-title: Dmitri's corner
+title: Dmitri Schebarchov
 comments: False
 format:
   html:
@@ -24,13 +24,16 @@ listing:
 
 about:
   id: about-dmitrische
-  template: jolla
-  image: images/potty.jpg
+  template: trestles #jolla
+  image: images/mug.jpg
   image-shape: round 
   links:
     - icon: github
       text: GitHub
       href: https://github.com/dmitrische
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/dmitri-schebarchov-054a163a/
     - icon: google
       text: Scholar
       href: https://scholar.google.co.nz/citations?user=_qsXyxkAAAAJ&hl=en
@@ -40,5 +43,13 @@ about:
 ---
 
 :::{#about-dmitrische}
-Hello World! More about me [here](about.qmd). My blogposts are [here](blog/index.qmd) and projects are [here](work/index.qmd)
+Welcome to my website! 
+
+I am a computational modeller with PhD in physics and extensive experience in simulation-based research, including methods development, data analysis, and communication. 
+
+My earlier research focused primarily on nanomaterials, but joining a fin-tech startup led me to agent-based modelling of markets and other socio-economic systems. 
+
+Recently, I've decided to pursue a number of data science projects and use this website for (i) blogging about my learnings and (ii) showcasing my (old and current) work. 
+
+Please, feel free to visit my [Blog](blog/index.qmd), explore my [Work](work/index.qmd), or view my [CV](about.qmd).
 :::

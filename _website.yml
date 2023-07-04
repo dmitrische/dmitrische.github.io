@@ -1,8 +1,8 @@
 website: 
-  title: "Dmitri Schebarchov"
+  title: "DmitriSche"
   site-url: https://dmitrische.github.io/
   description: "Dmitri's website"
-  image: images/potty.jpg
+  image: images/mug.jpg
   page-navigation: false
   reader-mode: false
   navbar:
