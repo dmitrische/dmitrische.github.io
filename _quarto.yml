@@ -3,10 +3,50 @@ project:
   preview:
     port: 7777
 
-metadata-files:
-  - _website.yml
-  - _format.yml
-  
+website:
+  title: "Dmitri's Website"
+  site-url: https://dmitrische.github.io/
+  image: images/mug.jpg
+  page-navigation: false
+  reader-mode: false
+  navbar:
+    title: false
+    pinned: true
+    left: 
+      - icon: house
+        href: index.qmd
+        text: "Home"
+      - icon: newspaper
+        text: Blog
+        href: blog/index.qmd
+      - icon: sliders2
+        text: Projects
+        href: work/index.qmd
+      - icon: file-person
+        text: CV
+        href: DmitriCV.pdf
+    right:
+      - icon: code-slash
+        href: https://github.com/dmitrische/dmitrische.github.io
+
+format:
+  html:
+    theme: simplex
+    #css: styles.css
+    toc: false
+    smooth-scroll: true
+    format:
+      html:
+        link-external-icon: true
+        link-external-newwindow: true
+        #link-external-filter: '^(?:http:|https:)\/\/forbo7\.github\.io\/'
+
 execute:
   freeze: auto
-  
+
+## Could separate out directives into separate .yml files
+## and link to them using the metadata-files keyword, e.g.
+#metadata-files:
+#  - _website.yml
+#  - _format.yml
+## But for now I've decided to keep all the directives here.

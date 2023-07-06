@@ -4,27 +4,9 @@ comments: False
 format:
   html:
     page-layout: full
-
-listing:
-  - id: landing-posts
-    contents: blog/posts
-    type: default
-    max-items: 3
-    sort:
-      - "date desc"
-      - "title asc"
-  - id: landing-projects
-    contents: work/projects
-    type: grid
-    max-items: 6
-    grid-columns: 3
-    sort: 
-      - "date desc"
-      - "title asc"
-
 about:
   id: about-dmitrische
-  template: trestles #jolla
+  template: trestles
   image: images/mug.jpg
   image-shape: round 
   links:
@@ -45,11 +27,11 @@ about:
 :::{#about-dmitrische}
 Welcome to my website! 
 
-I am a computational modeller with PhD in physics and extensive experience in simulation-based research, including methods development, data analysis, and communication. 
+I am a computational modeller with PhD in physics and extensive postdoctoral experience in simulation-based research, including methods development. 
 
-My earlier research focused primarily on nanomaterials, but joining a fin-tech startup led me to agent-based modelling of markets and other socio-economic systems. 
+Most of my academic work focussed on nanoscale materials modelling; but, after joining a fin-tech startup, my interests broadened to include agent-based modelling of socio-economic systems: markets, emissions trading schemes, and blockchain networks. 
 
-Recently, I've decided to pursue a number of data science projects and use this website for (i) blogging about my learnings and (ii) showcasing my (old and current) work. 
+To branch out even more, I intend to pursue a number of data science projects and use this website for (i) blogging about my learnings and (ii) showcasing my (past and current) work. 
 
-Please, feel free to visit my [Blog](blog/index.qmd), explore my [Work](work/index.qmd), or view my [CV](about.qmd).
+Please, feel free to visit my [Blog](blog/index.qmd), explore my [Projects](work/index.qmd), download my [CV](DmitriCV.pdf), or reach out by [e-mail](mailto:dmitri.schebarchov@gmail.com).
 :::

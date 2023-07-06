@@ -1,0 +1,23 @@
+---
+title: "Dmitri Schebarchov"
+image: images/mug.jpg
+image-shape: round 
+comments: false
+about:
+  template: jolla
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/dmitrische
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/dmitri-schebarchov-054a163a/
+    - icon: google
+      text: Scholar
+      href: https://scholar.google.co.nz/citations?user=_qsXyxkAAAAJ&hl=en
+    - icon: envelope
+      text: Email
+      href: mailto:dmitri.schebarchov@gmail.com
+---
+
+
