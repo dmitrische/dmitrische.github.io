@@ -1,0 +1,14 @@
+---
+title: "Nanofluidics"
+description: "A series of molecular dynamics simulations and thermodynamic modelling."
+author: "Dmitri Schebarchov"
+date: "2023-07-07"
+categories: [nanofluidics, molecular dynamics, academic]
+image: ./assets/Nanoscale2013-TOC.png
+---
+
+Summary of my early work on molecular dynamics simulations of nanocluster melting. 
+
+![Figure: Sequence of snapshots showing thin metal film dewetting on a porous substrate.](./assets/Nanoscale2013-TOC.png){fig-align="left" width=50%}
+
+

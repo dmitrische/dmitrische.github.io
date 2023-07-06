@@ -7,7 +7,7 @@ format:
 about:
   id: about-dmitrische
   template: trestles
-  image: images/mug.jpg
+  image: assets/mug.jpg
   image-shape: round 
   links:
     - icon: github
@@ -29,9 +29,9 @@ Welcome to my website!
 
 I am a computational modeller with PhD in physics and extensive postdoctoral experience in simulation-based research, including methods development. 
 
-Most of my academic work focussed on nanoscale materials modelling; but, after joining a fin-tech startup, my interests broadened to include agent-based modelling of socio-economic systems: markets, emissions trading schemes, and blockchain networks. 
+Most of my academic work revolved around nanoscale materials modelling; but, after joining a fin-tech startup, my interests broadened to include agent-based modelling of socio-economic systems: markets, emissions trading schemes, and blockchain networks. 
 
 To branch out even more, I intend to pursue a number of data science projects and use this website for (i) blogging about my learnings and (ii) showcasing my (past and current) work. 
 
-Please, feel free to visit my [Blog](blog/index.qmd), explore my [Projects](work/index.qmd), download my [CV](DmitriCV.pdf), or reach out by [e-mail](mailto:dmitri.schebarchov@gmail.com).
+Please, feel free to visit my [Blog](blog/index.qmd), explore my [Projects](work/index.qmd), download my [CV](assets/DmitriCV.pdf), or reach out by [e-mail](mailto:dmitri.schebarchov@gmail.com).
 :::

@@ -19,12 +19,12 @@ website:
       - icon: newspaper
         text: Blog
         href: blog/index.qmd
-      - icon: sliders2
+      - icon: journal-richtext
         text: Projects
         href: work/index.qmd
       - icon: file-person
         text: CV
-        href: DmitriCV.pdf
+        href: assets/DmitriCV.pdf
     right:
       - icon: code-slash
         href: https://github.com/dmitrische/dmitrische.github.io

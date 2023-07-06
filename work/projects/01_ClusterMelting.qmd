@@ -1,0 +1,13 @@
+---
+title: "Melting of atomic clusters"
+description: "A series of molecular dynamics simulations and thermodynamic modelling."
+author: "Dmitri Schebarchov"
+date: "2023-07-06"
+categories: [melting, molecular dynamics, academic]
+image: ./assets/PRL2005-fig3.png
+---
+
+Summary of work on capillary action. 
+
+![Figure: Two snapshots of a metal cluster at different temperatures.](./assets/PRL2005-fig3.png){fig-align="left" width=50%}
+

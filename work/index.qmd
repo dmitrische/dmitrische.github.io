@@ -1,9 +1,15 @@
 ---
-title: Project Portfolio
+title: Projects
 comments: false
 listing:
     - id: projects
       contents: projects
+      sort:
+        - "date desc"
+        - "title asc"
+      image-align: left
+      categories: true
+      fields: [title, description, image]
 format:
     html:
         page-layout: full
