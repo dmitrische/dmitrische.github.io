@@ -15,7 +15,17 @@ format:
         page-layout: full
 ---
 
-Here you will (eventually) find a collection of projects I have worked on.
+Here you will find links to to some of my current projects on GitHub, followed by a listing of my past academic research with links to retrospective write-ups.
+
+## On-going projects
+
+- Python implementation of an agent-based model of a minimal economy developed by Steilgitz *et al.*
+
+- Data gathering, analysis, and modelling in relation to carbon market price dynamics.
+
+## Academic research
 
 :::{#projects}
 :::
+
+## 

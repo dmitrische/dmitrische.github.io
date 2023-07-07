@@ -1,6 +1,6 @@
 ---
-title: "Nanoalloys"
-description: "Algorithm development for theoretical structure prediction of mixed metal clusters."
+title: "Nanoalloys structure prediction"
+description: "Global optimisation Algorithm development and application in theoretical structure prediction of mixed metal clusters."
 author: "Dmitri Schebarchov"
 date: "2023-07-09"
 categories: [nanoalloys, global optimisation, academic]

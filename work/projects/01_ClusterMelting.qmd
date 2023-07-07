@@ -1,7 +1,6 @@
 ---
 title: "Melting of atomic clusters"
-description: "A series of molecular dynamics simulations and thermodynamic modelling."
-author: "Dmitri Schebarchov"
+description: "Molecular dynamics simulation and thermodynamic modelling of metal nanoclusters melting."
 date: "2023-07-06"
 categories: [melting, molecular dynamics, academic]
 image: ./assets/PRL2005-fig3.png

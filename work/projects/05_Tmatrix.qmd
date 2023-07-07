@@ -1,8 +1,9 @@
 ---
 title: "T-matrix calculations"
-description: "Developing and testing numerical software for T-matrix calculation of light scattering by assemblies of particles."
+description: "Development and testing of software for T-matrix calculation of light scattering by assemblies of particles."
 author: "Dmitri Schebarchov"
 date: "2023-07-10"
 categories: [T-matrix, academic]
 image: ./assets/Optica2019-Fig4.png
 ---
+
