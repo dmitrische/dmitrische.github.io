@@ -1,14 +1,16 @@
 [
   {
-    "listing": "/work/index.html",
-    "items": []
-  },
-  {
     "listing": "/blog/index.html",
     "items": []
   },
   {
-    "listing": "/index.html",
-    "items": []
+    "listing": "/work/index.html",
+    "items": [
+      "/work/projects/05_Tmatrix.html",
+      "/work/projects/04_Nanoalloys.html",
+      "/work/projects/03_Superatoms.html",
+      "/work/projects/02_Nanofluidics.html",
+      "/work/projects/01_ClusterMelting.html"
+    ]
   }
 ]

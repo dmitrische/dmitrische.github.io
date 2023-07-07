@@ -1,23 +1,51 @@
 [
   {
-    "objectID": "work/index.html",
-    "href": "work/index.html",
-    "title": "Project Portfolio",
-    "section": "",
-    "text": "No matching items"
-  },
-  {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
     "title": "Personal blog",
     "section": "",
-    "text": "No matching items"
+    "text": "Blog posts coming!\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "work/index.html",
+    "href": "work/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Here you will find links to to some of my current projects on GitHub, followed by a listing of my past academic research with links to retrospective write-ups."
+  },
+  {
+    "objectID": "work/index.html#on-going-projects",
+    "href": "work/index.html#on-going-projects",
+    "title": "Projects",
+    "section": "On-going projects",
+    "text": "On-going projects\n\nPython implementation of an agent-based model of a minimal economy developed by Steilgitz et al.\nData gathering, analysis, and modelling in relation to carbon market price dynamics."
+  },
+  {
+    "objectID": "work/index.html#academic-research",
+    "href": "work/index.html#academic-research",
+    "title": "Projects",
+    "section": "Academic research",
+    "text": "Academic research\n\n\n\n\n  \n\n\n\n\nT-matrix calculations\n\n\n\n\n\nDevelopment and testing of software for T-matrix calculation of light scattering by assemblies of particles.\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nNanoalloys structure prediction\n\n\n\n\n\nGlobal optimisation Algorithm development and application in theoretical structure prediction of mixed metal clusters.\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nGallium superatoms\n\n\n\n\n\nSuperatom analysis of the electronic structure of metalloid gallium clusters.\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nNanoscale capillary action\n\n\n\n\n\nMolecular dynamics simulation and thermodynamic modelling of capillary absorption of metal nanodroplets.\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nMelting of atomic clusters\n\n\n\n\n\nMolecular dynamics simulation and thermodynamic modelling of metal nanoclusters melting.\n\n\n\n\n \n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "work/projects/02_Nanofluidics.html",
+    "href": "work/projects/02_Nanofluidics.html",
+    "title": "Nanoscale capillary action",
+    "section": "",
+    "text": "Figure: Sequence of snapshots showing thin metal film dewetting on a porous substrate."
+  },
+  {
+    "objectID": "work/projects/01_ClusterMelting.html",
+    "href": "work/projects/01_ClusterMelting.html",
+    "title": "Melting of atomic clusters",
+    "section": "",
+    "text": "Summary of work on capillary action.\n\n\n\nFigure: Two snapshots of a metal cluster at different temperatures."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Dmitri Schebarchov",
     "section": "",
-    "text": "No matching items\n\n\n\n\n\n\nNo matching items"
+    "text": "GitHub\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Scholar\n  \n  \n    \n     Email\n  \n\n  \n  \nWelcome to my website!\nI am a computational modeller with PhD in physics and extensive postdoctoral experience in simulation-based research, including methods development.\nMost of my academic work revolved around nanoscale materials modelling; but, after joining a fin-tech startup, my interests broadened to include agent-based modelling of socio-economic systems: markets, emissions trading schemes, and blockchain networks.\nTo branch out even more, I intend to pursue a number of data science projects and use this website for (i) blogging about my learnings and (ii) showcasing my (past and current) work.\nPlease, feel free to visit my Blog, explore my Projects, download my CV, or reach out by e-mail."
   }
 ]
