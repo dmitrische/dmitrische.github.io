@@ -1,0 +1,21 @@
+---
+title: Skills
+comments: false
+format:
+    html:
+        page-layout: full
+---
+
+Here you will find a list of what I consider to be my core technical skills and competencies, with a brief description for context and links to relevant projects in my [portfolio](../work/index.qmd).
+
+## Computational modelling
+
+## Software development
+
+## Data analysis
+
+## Technical writing
+
+## High-performance computing
+
+## Research

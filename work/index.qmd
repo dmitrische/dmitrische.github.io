@@ -5,8 +5,7 @@ listing:
     - id: projects
       contents: projects
       sort:
-        - "date desc"
-        - "title asc"
+        - "filename desc"
       image-align: left
       categories: true
       fields: [title, description, image]
@@ -15,15 +14,17 @@ format:
         page-layout: full
 ---
 
-Here you will find links to to some of my current projects on GitHub, followed by a listing of my past academic research with links to retrospective write-ups.
+Here you will find links to some of my currently ongoing projects on GitHub, followed by a listing of past (mostly academic) work with links to retrospective summaries.
 
-## On-going projects
+## In progress
 
-- Python implementation of an agent-based model of a minimal economy developed by Steilgitz *et al.*
+- Python implementation of an agent-based model of a minimal market-based economy developed by Steilgitz *et al.*, with various extensions including emissions trading.
 
-- Data gathering, analysis, and modelling in relation to carbon market price dynamics.
+- Data gathering, analysis, and modelling of carbon market price dynamics.
 
-## Academic research
+- Simple web app for calculating carbon units earned from forestry in the NZ-ETS.
+
+## Past work
 
 :::{#projects}
 :::

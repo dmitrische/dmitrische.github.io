@@ -16,15 +16,18 @@ website:
       - icon: house
         href: index.qmd
         text: "Home"
-      - icon: newspaper
-        text: Blog
-        href: blog/index.qmd
-      - icon: journal-richtext
-        text: Projects
-        href: work/index.qmd
-      - icon: file-person
+      - icon: file-person-fill
         text: CV
         href: assets/DmitriCV.pdf
+      - icon: wrench-adjustable
+        href: skills/skills.qmd
+        text: Skills
+      - icon: folder2-open #journal-richtext
+        text: Portfolio
+        href: work/index.qmd
+      - icon: pencil-square #newspaper
+        text: Blog
+        href: blog/index.qmd
     right:
       - icon: code-slash
         href: https://github.com/dmitrische/dmitrische.github.io
