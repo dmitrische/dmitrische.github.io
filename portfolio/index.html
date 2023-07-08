@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Dmitri’s Website - Blog</title>
+<title>Dmitri’s Website - Projects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -63,20 +63,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-posts .list');
+    const listingTargetEl = window.document.querySelector('#listing-projects .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-posts'] = new List('listing-posts', options);
+    window['quarto-listings']['listing-projects'] = new List('listing-projects', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -125,12 +125,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Skillset</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../portfolio/index.html" rel="" target=""><i class="bi bi-folder2-open" role="img">
+    <a class="nav-link active" href="../portfolio/index.html" rel="" target="" aria-current="page"><i class="bi bi-folder2-open" role="img">
 </i> 
  <span class="menu-text">Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../blog/index.html" rel="" target="" aria-current="page"><i class="bi bi-pencil-square" role="img">
+    <a class="nav-link" href="../blog/index.html" rel="" target=""><i class="bi bi-pencil-square" role="img">
 </i> 
  <span class="menu-text">Blog</span></a>
   </li>  
@@ -153,14 +153,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="T-matrix">T-matrix <span class="quarto-category-count">(1)</span></div><div class="category" data-category="academic">academic <span class="quarto-category-count">(5)</span></div><div class="category" data-category="global optimisation">global optimisation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="melting">melting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="molecular dynamics">molecular dynamics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="nanoalloys">nanoalloys <span class="quarto-category-count">(1)</span></div><div class="category" data-category="nanofluidics">nanofluidics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="quantum chemistry">quantum chemistry <span class="quarto-category-count">(1)</span></div><div class="category" data-category="superatoms">superatoms <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">Projects</h1>
 </div>
 
 
@@ -175,19 +174,138 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Blog posts coming!</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-posts">
+<p>Here you will find links to some of my currently ongoing projects on GitHub, followed by a listing of past (mostly academic) work with links to retrospective summaries.</p>
+<section id="in-progress" class="level2">
+<h2 class="anchored" data-anchor-id="in-progress">In progress</h2>
+<ul>
+<li><p>Python implementation of an agent-based model of a minimal market-based economy developed by Steilgitz <em>et al.</em>, with various extensions including emissions trading.</p></li>
+<li><p>Data gathering, analysis, and modelling of carbon market price dynamics.</p></li>
+<li><p>Simple web app for calculating carbon units earned from forestry in the NZ-ETS.</p></li>
+</ul>
+</section>
+<section id="past-work" class="level2">
+<h2 class="anchored" data-anchor-id="past-work">Past work</h2>
+<div id="listing-projects" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
+<div class="quarto-post image-left" data-index="0" data-categories="T-matrix,academic" data-listing-date-sort="1688904000000" data-listing-file-modified-sort="1688683445869" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../portfolio/projects/05_Tmatrix.html"> <img src="../portfolio/projects/assets/Optica2019-Fig4.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../portfolio/projects/05_Tmatrix.html">
+<h3 class="no-anchor listing-title">
+T-matrix calculations
+</h3>
+<div class="listing-subtitle">
 
+</div>
+<div class="listing-description">
+<p>Development and testing of software for T-matrix calculation of light scattering by assemblies of particles.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../portfolio/projects/05_Tmatrix.html"> </a>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="1" data-categories="nanoalloys,global optimisation,academic" data-listing-date-sort="1688817600000" data-listing-file-modified-sort="1688684434536" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../portfolio/projects/04_Nanoalloys.html"> <img src="../portfolio/projects/assets/JCP2013-TOC.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../portfolio/projects/04_Nanoalloys.html">
+<h3 class="no-anchor listing-title">
+Nanoalloys structure prediction
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>Global optimisation Algorithm development and application in theoretical structure prediction of mixed metal clusters.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../portfolio/projects/04_Nanoalloys.html"> </a>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="2" data-categories="superatoms,quantum chemistry,academic" data-listing-date-sort="1688731200000" data-listing-file-modified-sort="1688637498558" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../portfolio/projects/03_Superatoms.html"> <img src="../portfolio/projects/assets/PCCP2011-TOC.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../portfolio/projects/03_Superatoms.html">
+<h3 class="no-anchor listing-title">
+Gallium superatoms
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>Superatom analysis of the electronic structure of metalloid gallium clusters.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../portfolio/projects/03_Superatoms.html"> </a>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="3" data-categories="nanofluidics,molecular dynamics,academic" data-listing-date-sort="1688644800000" data-listing-file-modified-sort="1688683027955" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../portfolio/projects/02_Nanofluidics.html"> <img src="../portfolio/projects/assets/Nanoscale2013-TOC.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../portfolio/projects/02_Nanofluidics.html">
+<h3 class="no-anchor listing-title">
+Nanoscale capillary action
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>Molecular dynamics simulation and thermodynamic modelling of capillary absorption of metal nanodroplets.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../portfolio/projects/02_Nanofluidics.html"> </a>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="4" data-categories="melting,molecular dynamics,academic" data-listing-date-sort="1688558400000" data-listing-file-modified-sort="1688685990166" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../portfolio/projects/01_ClusterMelting.html"> <img src="../portfolio/projects/assets/PRL2005-fig3.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../portfolio/projects/01_ClusterMelting.html">
+<h3 class="no-anchor listing-title">
+Melting of atomic clusters
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>Molecular dynamics simulation and thermodynamic modelling of metal nanoclusters melting.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../portfolio/projects/01_ClusterMelting.html"> </a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

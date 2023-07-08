@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Dmitri’s Website - Blog</title>
+<title>Dmitri’s Website - Skillset</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -63,20 +63,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-posts .list');
+    const listingTargetEl = window.document.querySelector('#listing-skills .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-posts'] = new List('listing-posts', options);
+    window['quarto-listings']['listing-skills'] = new List('listing-skills', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -120,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../skillset/skills.html" rel="" target=""><i class="bi bi-wrench-adjustable" role="img">
+    <a class="nav-link active" href="../skillset/skills.html" rel="" target="" aria-current="page"><i class="bi bi-wrench-adjustable" role="img">
 </i> 
  <span class="menu-text">Skillset</span></a>
   </li>  
@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../blog/index.html" rel="" target="" aria-current="page"><i class="bi bi-pencil-square" role="img">
+    <a class="nav-link" href="../blog/index.html" rel="" target=""><i class="bi bi-pencil-square" role="img">
 </i> 
  <span class="menu-text">Blog</span></a>
   </li>  
@@ -152,15 +152,13 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">Skillset</h1>
 </div>
 
 
@@ -175,19 +173,89 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Blog posts coming!</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-posts">
-<div class="list quarto-listing-default">
-
+<p>Here you will find a list of what I consider to be my core technical skills and competencies. Click on any one for more details and context with links to relevant projects in my <a href="../portfolio/index.html">portfolio</a>.</p>
+<div id="listing-skills" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1688804939644" data-listing-reading-time-sort="1">
+<a href="../skillset/skills/01_CompModel.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Computational modelling
+</h5>
+<div class="card-text listing-description">
+Using computers to simulate and study complex systems, ranging from nanoscale materials to market-based economies.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1688804019447" data-listing-reading-time-sort="1">
+<a href="../skillset/skills/02_SoftwareDev.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Software development
+</h5>
+<div class="card-text listing-description">
+Designing, implementing, testing, and documenting of simulation programs and scripts in Python, Fortran and other programming languages.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1688803346346" data-listing-reading-time-sort="1">
+<a href="../skillset/skills/03_DataAnalysis.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Data analysis
+</h5>
+<div class="card-text listing-description">
+Inspecting, cleaning, transforming, modeling, and interpreting data with the goal of discovering useful information.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1688805464024" data-listing-reading-time-sort="1">
+<a href="../skillset/skills/04_HighPerComp.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+High-performance computing
+</h5>
+<div class="card-text listing-description">
+Using supercomputers and computer clusters to solve advanced or resource-intensive computation problems, often through parallelization.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1688804870292" data-listing-reading-time-sort="1">
+<a href="../skillset/skills/05_TechWriting.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Technical writing
+</h5>
+<div class="card-text listing-description">
+Writing to clearly describe or explain complex and specialized information to audiences who may or may not be familiar with the subject matter.
+</div>
+</div>
+</div>
+</a>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

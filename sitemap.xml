@@ -1,43 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://dmitrische.github.io/skillset/skills.html</loc>
+    <lastmod>2023-07-08T08:43:55.536Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/skillset/skills/02_SoftwareDev.html</loc>
+    <lastmod>2023-07-08T08:43:54.796Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/skillset/skills/04_HighPerComp.html</loc>
+    <lastmod>2023-07-08T08:43:54.240Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/portfolio/projects/01_ClusterMelting.html</loc>
+    <lastmod>2023-07-08T08:43:53.628Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/portfolio/projects/02_Nanofluidics.html</loc>
+    <lastmod>2023-07-08T08:43:53.060Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/portfolio/projects/03_Superatoms.html</loc>
+    <lastmod>2023-07-08T08:43:52.488Z</lastmod>
+  </url>
+  <url>
     <loc>https://dmitrische.github.io/about.html</loc>
-    <lastmod>2023-07-07T05:34:16.345Z</lastmod>
+    <lastmod>2023-07-08T08:43:51.672Z</lastmod>
   </url>
   <url>
     <loc>https://dmitrische.github.io/blog/index.html</loc>
-    <lastmod>2023-07-07T05:34:15.729Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dmitrische.github.io/work/projects/05_Tmatrix.html</loc>
-    <lastmod>2023-07-07T05:34:15.097Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dmitrische.github.io/work/projects/04_Nanoalloys.html</loc>
-    <lastmod>2023-07-07T05:34:14.493Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dmitrische.github.io/work/index.html</loc>
-    <lastmod>2023-07-07T05:34:13.885Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dmitrische.github.io/skills/skills.html</loc>
-    <lastmod>2023-07-07T05:34:13.309Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dmitrische.github.io/work/projects/03_Superatoms.html</loc>
-    <lastmod>2023-07-07T05:34:14.201Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dmitrische.github.io/work/projects/02_Nanofluidics.html</loc>
-    <lastmod>2023-07-07T05:34:14.793Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dmitrische.github.io/work/projects/01_ClusterMelting.html</loc>
-    <lastmod>2023-07-07T05:34:15.425Z</lastmod>
+    <lastmod>2023-07-08T08:43:51.056Z</lastmod>
   </url>
   <url>
     <loc>https://dmitrische.github.io/index.html</loc>
-    <lastmod>2023-07-07T05:34:16.061Z</lastmod>
+    <lastmod>2023-07-08T08:43:51.380Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/portfolio/index.html</loc>
+    <lastmod>2023-07-08T08:43:52.208Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/portfolio/projects/04_Nanoalloys.html</loc>
+    <lastmod>2023-07-08T08:43:52.764Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/portfolio/projects/05_Tmatrix.html</loc>
+    <lastmod>2023-07-08T08:43:53.340Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/skillset/skills/01_CompModel.html</loc>
+    <lastmod>2023-07-08T08:43:53.952Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/skillset/skills/05_TechWriting.html</loc>
+    <lastmod>2023-07-08T08:43:54.520Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/skillset/skills/03_DataAnalysis.html</loc>
+    <lastmod>2023-07-08T08:43:55.076Z</lastmod>
   </url>
 </urlset>
