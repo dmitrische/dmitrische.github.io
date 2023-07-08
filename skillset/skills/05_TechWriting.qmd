@@ -1,0 +1,4 @@
+---
+title: "Technical writing"
+description: "Writing to clearly describe or explain complex and specialized information to audiences who may or may not be familiar with the subject matter."
+---

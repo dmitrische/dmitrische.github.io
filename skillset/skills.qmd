@@ -1,0 +1,21 @@
+---
+title: Skillset
+comments: false
+listing:
+    - id: skills
+      contents: skills
+      type: grid
+      sort:
+        - "filename asc"
+      image-align: left
+      fields: [title, description]
+format:
+    html:
+        page-layout: full
+---
+
+Here you will find a list of what I consider to be my core technical skills and competencies. Click on any one for more details and context with links to relevant projects in my [portfolio](../portfolio/index.qmd).
+
+:::{#skills}
+
+:::

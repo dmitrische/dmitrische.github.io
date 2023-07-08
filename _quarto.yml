@@ -20,11 +20,11 @@ website:
         text: CV
         href: assets/DmitriCV.pdf
       - icon: wrench-adjustable
-        href: skills/skills.qmd
+        href: skillset/skills.qmd
         text: Skillset
       - icon: folder2-open #journal-richtext
         text: Portfolio
-        href: work/index.qmd
+        href: portfolio/index.qmd
       - icon: pencil-square #newspaper
         text: Blog
         href: blog/index.qmd
