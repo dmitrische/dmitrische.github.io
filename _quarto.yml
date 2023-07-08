@@ -13,15 +13,15 @@ website:
     title: false
     pinned: true
     left: 
-      - icon: house
-        href: index.qmd
-        text: "Home"
       - icon: file-person-fill
+        href: index.qmd
+        text: "About"
+      - icon: file-pdf
         text: CV
         href: assets/DmitriCV.pdf
       - icon: wrench-adjustable
         href: skills/skills.qmd
-        text: Skills
+        text: Skillset
       - icon: folder2-open #journal-richtext
         text: Portfolio
         href: work/index.qmd
