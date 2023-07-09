@@ -1,6 +1,6 @@
 ---
 title: "T-matrix calculations"
-description: "Development and testing of software for T-matrix calculation of light scattering by assemblies of particles."
+description: "Developing and testing of custom software for T-matrix calculation of light scattering by assemblies of particles."
 author: "Dmitri Schebarchov"
 date: "2023-07-10"
 categories: [T-matrix, academic]

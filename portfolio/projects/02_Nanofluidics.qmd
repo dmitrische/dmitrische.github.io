@@ -1,10 +1,10 @@
 ---
 title: "Nanoscale capillary action"
-description: "Molecular dynamics simulation and thermodynamic modelling of capillary absorption of metal nanodroplets."
+description: "Explaining unexpected capillary absorption of metal nanodroplets, using molecular dynamics simulation and thermodynamic modelling."
 author: "Dmitri Schebarchov"
 date: "2023-07-07"
 categories: [nanofluidics, molecular dynamics, academic]
-image: ./assets/Nanoscale2013-TOC.png
+image: ./assets/Nanoscale2011-TOC.png
 ---
 
 

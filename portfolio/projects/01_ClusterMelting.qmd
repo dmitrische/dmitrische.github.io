@@ -1,6 +1,6 @@
 ---
 title: "Melting of atomic clusters"
-description: "Molecular dynamics simulation and thermodynamic modelling of metal nanoclusters melting."
+description: "Shedding new light on the melting behavior of metal nanoclusters, using molecular dynamics simulation and thermodynamic modelling."
 date: "2023-07-06"
 categories: [melting, molecular dynamics, academic]
 image: ./assets/PRL2005-fig3.png
