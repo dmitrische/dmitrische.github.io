@@ -33,5 +33,5 @@ After joining a fin-tech startup, my interests broadened to include agent-based 
 
 To branch out even more, I intend to pursue a number of data science projects and use this website for (i) blogging about my learnings and (ii) showcasing some of my work. 
 
-Please, feel free to download my [CV](assets/DmitriCV.pdf), find out more about my [skillset](skillset/skills.qmd), explore my projects [portfolio](portfolio/index.qmd), read my [blog](blog/index.qmd), or reach out by [e-mail](mailto:dmitri.schebarchov@gmail.com).
+Please, feel free to download my [CV](assets/DmitriCV.pdf), find out more about my [skillset](skillset/skillset.qmd), explore my projects [portfolio](portfolio/portfolio.qmd), read my [blog](blog/blog.qmd), or reach out by [e-mail](mailto:dmitri.schebarchov@gmail.com).
 :::

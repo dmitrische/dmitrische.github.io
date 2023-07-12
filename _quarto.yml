@@ -20,14 +20,14 @@ website:
         text: CV
         href: assets/DmitriCV.pdf
       - icon: wrench-adjustable
-        href: skillset/skills.qmd
+        href: skillset/skillset.qmd
         text: Skillset
       - icon: folder2-open #journal-richtext
         text: Portfolio
-        href: portfolio/index.qmd
+        href: portfolio/portfolio.qmd
       - icon: pencil-square #newspaper
         text: Blog
-        href: blog/index.qmd
+        href: blog/blog.qmd
     right:
       - icon: code-slash
         href: https://github.com/dmitrische/dmitrische.github.io

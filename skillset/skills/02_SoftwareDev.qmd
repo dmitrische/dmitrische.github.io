@@ -1,4 +1,4 @@
 ---
 title: "Software development"
-description: "Designing, implementing, testing, and documenting of simulation software in multiple programming languages."
+description: "Designing, implementing, testing, and documenting software in multiple programming languages."
 ---

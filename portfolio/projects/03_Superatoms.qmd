@@ -1,6 +1,6 @@
 ---
 title: "Gallium superatoms"
-description: "Looking for evidence of atom-like electron shell structure in metalloid gallium clusters, using quantum chemistry methods."
+description: "Looking for evidence of atomic-like orbitals and electron shell structure in metalloid gallium clusters, using quantum chemistry methods."
 author: "Dmitri Schebarchov"
 date: "2023-07-08"
 categories: [superatoms, quantum chemistry, academic]

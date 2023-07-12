@@ -1,6 +1,6 @@
 ---
 title: "T-matrix calculations"
-description: "Developing and testing of custom software for T-matrix calculation of light scattering by assemblies of particles."
+description: "Developing and testing custom software for T-matrix calculations of light scattering by assemblies of particles, using Fortran and Python."
 author: "Dmitri Schebarchov"
 date: "2023-07-10"
 categories: [T-matrix, academic]

@@ -1,0 +1,4 @@
+---
+title: "Research"
+description: "Systematically pursuing answers to questions for the purposes of accumulating knowledge, solving problems, or developing products."
+---

@@ -14,7 +14,7 @@ format:
         page-layout: full
 ---
 
-Here you will find a list of what I consider to be my core technical skills and competencies. Click on any one for more details and context with links to relevant projects in my [portfolio](../portfolio/index.qmd).
+Here you will find a set of what I consider to be my core skills and competencies. Click on any one for more detailed context with links to relevant projects in my [portfolio](../portfolio/portfolio.qmd).
 
 :::{#skills}
 
