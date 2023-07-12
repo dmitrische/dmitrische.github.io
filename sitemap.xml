@@ -1,63 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dmitrische.github.io/skillset/skills.html</loc>
-    <lastmod>2023-07-09T05:16:40.645Z</lastmod>
+    <loc>https://dmitrische.github.io/skillset/skillset.html</loc>
+    <lastmod>2023-07-12T08:39:33.084Z</lastmod>
   </url>
   <url>
     <loc>https://dmitrische.github.io/skillset/skills/02_SoftwareDev.html</loc>
-    <lastmod>2023-07-09T05:16:39.945Z</lastmod>
+    <lastmod>2023-07-12T08:39:32.348Z</lastmod>
   </url>
   <url>
-    <loc>https://dmitrische.github.io/skillset/skills/04_HighPerComp.html</loc>
-    <lastmod>2023-07-09T05:16:39.421Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dmitrische.github.io/portfolio/projects/01_ClusterMelting.html</loc>
-    <lastmod>2023-07-09T05:16:38.857Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dmitrische.github.io/portfolio/projects/02_Nanofluidics.html</loc>
-    <lastmod>2023-07-09T05:16:38.301Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dmitrische.github.io/portfolio/projects/03_Superatoms.html</loc>
-    <lastmod>2023-07-09T05:16:37.745Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dmitrische.github.io/about.html</loc>
-    <lastmod>2023-07-09T05:16:36.949Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dmitrische.github.io/blog/index.html</loc>
-    <lastmod>2023-07-09T05:16:36.333Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dmitrische.github.io/index.html</loc>
-    <lastmod>2023-07-09T05:16:36.661Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dmitrische.github.io/portfolio/index.html</loc>
-    <lastmod>2023-07-09T05:16:37.473Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dmitrische.github.io/portfolio/projects/04_Nanoalloys.html</loc>
-    <lastmod>2023-07-09T05:16:38.025Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dmitrische.github.io/portfolio/projects/05_Tmatrix.html</loc>
-    <lastmod>2023-07-09T05:16:38.577Z</lastmod>
+    <loc>https://dmitrische.github.io/skillset/skills/06_Research.html</loc>
+    <lastmod>2023-07-12T08:39:31.828Z</lastmod>
   </url>
   <url>
     <loc>https://dmitrische.github.io/skillset/skills/01_CompModel.html</loc>
-    <lastmod>2023-07-09T05:16:39.161Z</lastmod>
+    <lastmod>2023-07-12T08:39:31.280Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/portfolio/projects/05_Tmatrix.html</loc>
+    <lastmod>2023-07-12T08:39:30.612Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/portfolio/projects/04_Nanoalloys.html</loc>
+    <lastmod>2023-07-12T08:39:30.032Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/portfolio/portfolio.html</loc>
+    <lastmod>2023-07-12T08:39:29.472Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/index.html</loc>
+    <lastmod>2023-07-12T08:39:28.640Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/blog/blog.html</loc>
+    <lastmod>2023-07-12T08:39:28.312Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/about.html</loc>
+    <lastmod>2023-07-12T08:39:28.932Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/portfolio/projects/03_Superatoms.html</loc>
+    <lastmod>2023-07-12T08:39:29.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/portfolio/projects/02_Nanofluidics.html</loc>
+    <lastmod>2023-07-12T08:39:30.328Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/portfolio/projects/01_ClusterMelting.html</loc>
+    <lastmod>2023-07-12T08:39:30.956Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dmitrische.github.io/skillset/skills/04_HighPerComp.html</loc>
+    <lastmod>2023-07-12T08:39:31.560Z</lastmod>
   </url>
   <url>
     <loc>https://dmitrische.github.io/skillset/skills/05_TechWriting.html</loc>
-    <lastmod>2023-07-09T05:16:39.685Z</lastmod>
+    <lastmod>2023-07-12T08:39:32.096Z</lastmod>
   </url>
   <url>
     <loc>https://dmitrische.github.io/skillset/skills/03_DataAnalysis.html</loc>
-    <lastmod>2023-07-09T05:16:40.209Z</lastmod>
+    <lastmod>2023-07-12T08:39:32.612Z</lastmod>
   </url>
 </urlset>

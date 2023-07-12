@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Inspecting, cleaning, transforming, modeling, and interpreting data with the goal of discovering useful information.">
 
-<title>Dmitri’s Website - Data analysis</title>
+<title>Dmitri’s Website - Projects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,21 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -59,12 +60,43 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-projects .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-projects'] = new List('listing-projects', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 
 <div id="quarto-search-results"></div>
@@ -78,27 +110,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target=""><i class="bi bi-file-person-fill" role="img">
+    <a class="nav-link" href="../index.html" rel="" target=""><i class="bi bi-file-person-fill" role="img">
 </i> 
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../assets/DmitriCV.pdf" rel="" target=""><i class="bi bi-file-pdf" role="img">
+    <a class="nav-link" href="../assets/DmitriCV.pdf" rel="" target=""><i class="bi bi-file-pdf" role="img">
 </i> 
  <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../skillset/skillset.html" rel="" target=""><i class="bi bi-wrench-adjustable" role="img">
+    <a class="nav-link" href="../skillset/skillset.html" rel="" target=""><i class="bi bi-wrench-adjustable" role="img">
 </i> 
  <span class="menu-text">Skillset</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../portfolio/portfolio.html" rel="" target=""><i class="bi bi-folder2-open" role="img">
+    <a class="nav-link active" href="../portfolio/portfolio.html" rel="" target="" aria-current="page"><i class="bi bi-folder2-open" role="img">
 </i> 
  <span class="menu-text">Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog/blog.html" rel="" target=""><i class="bi bi-pencil-square" role="img">
+    <a class="nav-link" href="../blog/blog.html" rel="" target=""><i class="bi bi-pencil-square" role="img">
 </i> 
  <span class="menu-text">Blog</span></a>
   </li>  
@@ -117,23 +149,19 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="T-matrix">T-matrix <span class="quarto-category-count">(1)</span></div><div class="category" data-category="academic">academic <span class="quarto-category-count">(5)</span></div><div class="category" data-category="global optimisation">global optimisation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="melting">melting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="molecular dynamics">molecular dynamics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="nanoalloys">nanoalloys <span class="quarto-category-count">(1)</span></div><div class="category" data-category="nanofluidics">nanofluidics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="quantum chemistry">quantum chemistry <span class="quarto-category-count">(1)</span></div><div class="category" data-category="superatoms">superatoms <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data analysis</h1>
+<h1 class="title">Projects</h1>
 </div>
 
-<div>
-  <div class="description">
-    Inspecting, cleaning, transforming, modeling, and interpreting data with the goal of discovering useful information.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -146,8 +174,136 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>Here you will find links to some of my currently ongoing projects on GitHub, followed by a listing of past (mostly academic) work with links to retrospective summaries.</p>
+<section id="in-progress" class="level2">
+<h2 class="anchored" data-anchor-id="in-progress">In progress</h2>
+<ul>
+<li><p>Python implementation of an agent-based model of a minimal market-based economy developed by Steilgitz <em>et al.</em>, with various extensions including emissions trading.</p></li>
+<li><p>Data gathering, analysis, and modelling of carbon market price dynamics.</p></li>
+<li><p>Simple web app for calculating carbon units earned from forestry in the NZ-ETS.</p></li>
+</ul>
+</section>
+<section id="past-work" class="level2">
+<h2 class="anchored" data-anchor-id="past-work">Past work</h2>
+<div id="listing-projects" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-left" data-index="0" data-categories="T-matrix,academic" data-listing-date-sort="1688904000000" data-listing-file-modified-sort="1689039076239" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../portfolio/projects/05_Tmatrix.html"> <img src="../portfolio/projects/assets/Optica2019-Fig4.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../portfolio/projects/05_Tmatrix.html">
+<h3 class="no-anchor listing-title">
+T-matrix calculations
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>Developing and testing custom software for T-matrix calculations of light scattering by assemblies of particles, using Fortran and Python.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../portfolio/projects/05_Tmatrix.html"> </a>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="1" data-categories="nanoalloys,global optimisation,academic" data-listing-date-sort="1688817600000" data-listing-file-modified-sort="1689038750404" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../portfolio/projects/04_Nanoalloys.html"> <img src="../portfolio/projects/assets/JCP2013-TOC.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../portfolio/projects/04_Nanoalloys.html">
+<h3 class="no-anchor listing-title">
+Nanoalloys structure prediction
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>Developing, benchmarking, and applying global optimisation algorithms for theoretical structure prediction of mixed metal clusters.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../portfolio/projects/04_Nanoalloys.html"> </a>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="2" data-categories="superatoms,quantum chemistry,academic" data-listing-date-sort="1688731200000" data-listing-file-modified-sort="1689038397033" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../portfolio/projects/03_Superatoms.html"> <img src="../portfolio/projects/assets/PCCP2011-TOC.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../portfolio/projects/03_Superatoms.html">
+<h3 class="no-anchor listing-title">
+Gallium superatoms
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>Looking for evidence of atomic-like orbitals and electron shell structure in metalloid gallium clusters, using quantum chemistry methods.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../portfolio/projects/03_Superatoms.html"> </a>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="3" data-categories="nanofluidics,molecular dynamics,academic" data-listing-date-sort="1688644800000" data-listing-file-modified-sort="1688879098527" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="../portfolio/projects/02_Nanofluidics.html"> <img src="../portfolio/projects/assets/Nanoscale2011-TOC.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../portfolio/projects/02_Nanofluidics.html">
+<h3 class="no-anchor listing-title">
+Nanoscale capillary action
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>Explaining unexpected capillary absorption of metal nanodroplets, using molecular dynamics simulation and thermodynamic modelling.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../portfolio/projects/02_Nanofluidics.html"> </a>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="4" data-categories="melting,molecular dynamics,academic" data-listing-date-sort="1688558400000" data-listing-file-modified-sort="1689150855245" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="../portfolio/projects/01_ClusterMelting.html"> <img src="../portfolio/projects/assets/PRL2005-fig3.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../portfolio/projects/01_ClusterMelting.html">
+<h3 class="no-anchor listing-title">
+Melting of nanoparticles
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>Shedding new light on the melting behavior of metal nanoparticles, using molecular dynamics simulation and thermodynamic modelling.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../portfolio/projects/01_ClusterMelting.html"> </a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
 
 
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -387,5 +543,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

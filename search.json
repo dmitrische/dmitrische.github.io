@@ -1,59 +1,10 @@
 [
   {
-    "objectID": "skillset/skills.html",
-    "href": "skillset/skills.html",
+    "objectID": "skillset/skillset.html",
+    "href": "skillset/skillset.html",
     "title": "Skillset",
     "section": "",
-    "text": "Here you will find a list of what I consider to be my core technical skills and competencies. Click on any one for more details and context with links to relevant projects in my portfolio.\n\n\n\n\n\n\n\nComputational modelling\n\n\nUsing computers to simulate and study complex systems, ranging from nanoscale materials to market-based economies.\n\n\n\n\n\n\n\n\n\n\nSoftware development\n\n\nDesigning, implementing, testing, and documenting of simulation software in multiple programming languages.\n\n\n\n\n\n\n\n\n\n\nData analysis\n\n\nInspecting, cleaning, transforming, modeling, and interpreting data with the goal of discovering useful information.\n\n\n\n\n\n\n\n\n\n\nHigh-performance computing\n\n\nUsing supercomputers and computer clusters to solve resource-intensive computational problems.\n\n\n\n\n\n\n\n\n\n\nTechnical writing\n\n\nWriting to clearly describe or explain complex and specialized information to audiences who may or may not be familiar with the subject matter.\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "portfolio/projects/01_ClusterMelting.html",
-    "href": "portfolio/projects/01_ClusterMelting.html",
-    "title": "Melting of atomic clusters",
-    "section": "",
-    "text": "Summary of work on capillary action.\n\n\n\nFigure: Two snapshots of a metal cluster at different temperatures."
-  },
-  {
-    "objectID": "portfolio/projects/02_Nanofluidics.html",
-    "href": "portfolio/projects/02_Nanofluidics.html",
-    "title": "Nanoscale capillary action",
-    "section": "",
-    "text": "Figure: Sequence of snapshots showing thin metal film dewetting on a porous substrate."
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Blog posts coming!\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Dmitri Schebarchov",
-    "section": "",
-    "text": "GitHub\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Scholar\n  \n  \n    \n     Email\n  \n\n  \n  \nWelcome to my website!\nI am a computational modeller with PhD in physics and extensive postdoctoral experience in simulation-based research, mostly in the realm of nanoscale materials modelling.\nAfter joining a fin-tech startup, my interests broadened to include agent-based modelling of socio-economic systems: markets, emissions trading schemes, and blockchain networks.\nTo branch out even more, I intend to pursue a number of data science projects and use this website for (i) blogging about my learnings and (ii) showcasing some of my work.\nPlease, feel free to download my CV, find out more about my skillset, explore my projects portfolio, read my blog, or reach out by e-mail."
-  },
-  {
-    "objectID": "portfolio/index.html",
-    "href": "portfolio/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Here you will find links to some of my currently ongoing projects on GitHub, followed by a listing of past (mostly academic) work with links to retrospective summaries."
-  },
-  {
-    "objectID": "portfolio/index.html#in-progress",
-    "href": "portfolio/index.html#in-progress",
-    "title": "Projects",
-    "section": "In progress",
-    "text": "In progress\n\nPython implementation of an agent-based model of a minimal market-based economy developed by Steilgitz et al., with various extensions including emissions trading.\nData gathering, analysis, and modelling of carbon market price dynamics.\nSimple web app for calculating carbon units earned from forestry in the NZ-ETS."
-  },
-  {
-    "objectID": "portfolio/index.html#past-work",
-    "href": "portfolio/index.html#past-work",
-    "title": "Projects",
-    "section": "Past work",
-    "text": "Past work\n\n\n\n\n  \n\n\n\n\nT-matrix calculations\n\n\n\n\n\nDeveloping and testing of custom software for T-matrix calculation of light scattering by assemblies of particles.\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nNanoalloys structure prediction\n\n\n\n\n\nDeveloping and applying global optimisation algorithms for theoretical structure prediction of mixed metal clusters.\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nGallium superatoms\n\n\n\n\n\nLooking for evidence of atom-like electron shell structure in metalloid gallium clusters, using quantum chemistry methods.\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nNanoscale capillary action\n\n\n\n\n\nExplaining unexpected capillary absorption of metal nanodroplets, using molecular dynamics simulation and thermodynamic modelling.\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nMelting of atomic clusters\n\n\n\n\n\nShedding new light on the melting behavior of metal nanoclusters, using molecular dynamics simulation and thermodynamic modelling.\n\n\n\n\n \n\n\n\n\nNo matching items"
+    "text": "Here you will find a set of what I consider to be my core skills and competencies. Click on any one for more detailed context with links to relevant projects in my portfolio.\n\n\n\n\n\n\n\nComputational modelling\n\n\nUsing computers to simulate and study complex systems, ranging from nanoscale materials to market-based economies.\n\n\n\n\n\n\n\n\n\n\nSoftware development\n\n\nDesigning, implementing, testing, and documenting software in multiple programming languages.\n\n\n\n\n\n\n\n\n\n\nData analysis\n\n\nInspecting, cleaning, transforming, modeling, and interpreting data with the goal of discovering useful information.\n\n\n\n\n\n\n\n\n\n\nHigh-performance computing\n\n\nUsing supercomputers and computer clusters to solve resource-intensive computational problems.\n\n\n\n\n\n\n\n\n\n\nCommunication\n\n\nDescribing or explaining complex and specialized information to audiences who may or may not be familiar with the subject matter.\n\n\n\n\n\n\n\n\n\n\nResearch\n\n\nSystematically pursuing answers to questions for the purposes of accumulating knowledge, solving problems, or developing products.\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "skillset/skills/01_CompModel.html",
@@ -68,5 +19,82 @@
     "title": "Computational modelling",
     "section": "",
     "text": "I genuinely enjoy using computers to simulate and study complex systems, and it is this enjoyment that has motivated me most so far in my career. I still find it surprising, because I was initially dissuaded from programming as a first-year undergraduate. Fortunately, my subsequent summer internships at Industrial Research Ltd drastically changed my perspective, setting me on course for a PhD in physics with strong focus on nanoscale materials modelling.\nTo this day I see programming and implementing algorithms as an integral part of my process for breaking down complex problems into more manageable chunks. I relied on it to shed new light on how metal nanoparticles can melt and fill a capillary when not expected to. More recently, implementing an agent-based model of a minimal economy in Python helped me develop a clearer understanding of what drives trade and how a price emerges within a market setting."
+  },
+  {
+    "objectID": "portfolio/portfolio.html",
+    "href": "portfolio/portfolio.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Here you will find links to some of my currently ongoing projects on GitHub, followed by a listing of past (mostly academic) work with links to retrospective summaries."
+  },
+  {
+    "objectID": "portfolio/portfolio.html#in-progress",
+    "href": "portfolio/portfolio.html#in-progress",
+    "title": "Projects",
+    "section": "In progress",
+    "text": "In progress\n\nPython implementation of an agent-based model of a minimal market-based economy developed by Steilgitz et al., with various extensions including emissions trading.\nData gathering, analysis, and modelling of carbon market price dynamics.\nSimple web app for calculating carbon units earned from forestry in the NZ-ETS."
+  },
+  {
+    "objectID": "portfolio/portfolio.html#past-work",
+    "href": "portfolio/portfolio.html#past-work",
+    "title": "Projects",
+    "section": "Past work",
+    "text": "Past work\n\n\n\n\n  \n\n\n\n\nT-matrix calculations\n\n\n\n\n\nDeveloping and testing custom software for T-matrix calculations of light scattering by assemblies of particles, using Fortran and Python.\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nNanoalloys structure prediction\n\n\n\n\n\nDeveloping, benchmarking, and applying global optimisation algorithms for theoretical structure prediction of mixed metal clusters.\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nGallium superatoms\n\n\n\n\n\nLooking for evidence of atomic-like orbitals and electron shell structure in metalloid gallium clusters, using quantum chemistry methods.\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nNanoscale capillary action\n\n\n\n\n\nExplaining unexpected capillary absorption of metal nanodroplets, using molecular dynamics simulation and thermodynamic modelling.\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nMelting of nanoparticles\n\n\n\n\n\nShedding new light on the melting behavior of metal nanoparticles, using molecular dynamics simulation and thermodynamic modelling.\n\n\n\n\n \n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Dmitri Schebarchov",
+    "section": "",
+    "text": "GitHub\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Scholar\n  \n  \n    \n     Email\n  \n\n  \n  \nWelcome to my website!\nI am a computational modeller with PhD in physics and extensive postdoctoral experience in simulation-based research, mostly in the realm of nanoscale materials modelling.\nAfter joining a fin-tech startup, my interests broadened to include agent-based modelling of socio-economic systems: markets, emissions trading schemes, and blockchain networks.\nTo branch out even more, I intend to pursue a number of data science projects and use this website for (i) blogging about my learnings and (ii) showcasing some of my work.\nPlease, feel free to download my CV, find out more about my skillset, explore my projects portfolio, read my blog, or reach out by e-mail."
+  },
+  {
+    "objectID": "blog/blog.html",
+    "href": "blog/blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Blog posts coming!\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "portfolio/projects/02_Nanofluidics.html",
+    "href": "portfolio/projects/02_Nanofluidics.html",
+    "title": "Nanoscale capillary action",
+    "section": "",
+    "text": "Figure: Sequence of snapshots showing thin metal film dewetting on a porous substrate."
+  },
+  {
+    "objectID": "portfolio/projects/01_ClusterMelting.html",
+    "href": "portfolio/projects/01_ClusterMelting.html",
+    "title": "Melting of nanoparticles",
+    "section": "",
+    "text": "This project was partly motivated by the work at Nano Cluster Devices Limited – a Christchurch-based company making nanoscale devices by depositing metal nanoparticles on top of a grooved surface. Structural disintegration or misassembly due to melting was a concern to them, and it was more cost-effective to explore the issue using computer simulations before committing to more targeted (and relatively costly) experiments.\nMore motivation came from genuine curiosity and desire to learn how a fairly intuitive phenomenon, such as melting, can become ambiguous and counter-intuitive at the nanometre scale.\nSo, initially as a summer research student at Industrial Research Ltd (now Callaghan Innovation), I was tasked with running and analysing a series of simulations of model nanoparticles at gradually increasing temperatures, looking for anything out of the ordinary near the melting transition.\n\n\n\nFigure: Two snapshots of a model nanoparticle simulated at different temperatures, with the atoms color-coded by mobility: lighter-colored atoms are solid-like, and darker-colored atoms are liquid-like."
+  },
+  {
+    "objectID": "portfolio/projects/01_ClusterMelting.html#context",
+    "href": "portfolio/projects/01_ClusterMelting.html#context",
+    "title": "Melting of nanoparticles",
+    "section": "",
+    "text": "This project was partly motivated by the work at Nano Cluster Devices Limited – a Christchurch-based company making nanoscale devices by depositing metal nanoparticles on top of a grooved surface. Structural disintegration or misassembly due to melting was a concern to them, and it was more cost-effective to explore the issue using computer simulations before committing to more targeted (and relatively costly) experiments.\nMore motivation came from genuine curiosity and desire to learn how a fairly intuitive phenomenon, such as melting, can become ambiguous and counter-intuitive at the nanometre scale.\nSo, initially as a summer research student at Industrial Research Ltd (now Callaghan Innovation), I was tasked with running and analysing a series of simulations of model nanoparticles at gradually increasing temperatures, looking for anything out of the ordinary near the melting transition.\n\n\n\nFigure: Two snapshots of a model nanoparticle simulated at different temperatures, with the atoms color-coded by mobility: lighter-colored atoms are solid-like, and darker-colored atoms are liquid-like."
+  },
+  {
+    "objectID": "portfolio/projects/01_ClusterMelting.html#methods",
+    "href": "portfolio/projects/01_ClusterMelting.html#methods",
+    "title": "Melting of nanoparticles",
+    "section": "Methods",
+    "text": "Methods\nSimulations were carried out using several existing implementations of classical molecular dynamics (MD), which is a numerical method for stepping through Newton’s equations of motion for a given model system of interacting atoms.\nTo execute the simulations, I had to operate in a Linux environment and use command-line tools to launch jobs on a local computer cluster (through a queuing system).\nI learned shell scripting and how to build data pipelines with grep, sed, and awk, which enabled me to rapidly process and analyse large volumes of structured data produced by my simulations.\nThe analysis involved visual inspection and structural classification of 3D models, as shown in the figure above, as well as processing time-series data and using statistical techniques to calculate equilibrium averages."
+  },
+  {
+    "objectID": "portfolio/projects/01_ClusterMelting.html#outputs",
+    "href": "portfolio/projects/01_ClusterMelting.html#outputs",
+    "title": "Melting of nanoparticles",
+    "section": "Outputs",
+    "text": "Outputs\nSome of the findings were indeed surprising! most notably that, in a partially molten cluster, the solid crystal-melt interface can cause\n\nsudden restructuring of the solid core; and\nsuper-heating, i.e. complete melting occurring at a temperature higher than the bulk melting temperature.\n\nThe latter observation was particularly counter-intuitive, because nanoparticles generally melt at lower temperatures compared to their bulk counterpart.\nFinally, the findings opened up new lines of inquiry that led to my PhD in physics, which .\n\n\n\nFigure: Metal nanoparticle on a graphene surface."
+  },
+  {
+    "objectID": "portfolio/projects/01_ClusterMelting.html#acknowledgements",
+    "href": "portfolio/projects/01_ClusterMelting.html#acknowledgements",
+    "title": "Melting of nanoparticles",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements"
   }
 ]

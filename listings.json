@@ -1,20 +1,17 @@
 [
   {
-    "listing": "/skillset/skills.html",
+    "listing": "/skillset/skillset.html",
     "items": [
       "/skillset/skills/01_CompModel.html",
       "/skillset/skills/02_SoftwareDev.html",
       "/skillset/skills/03_DataAnalysis.html",
       "/skillset/skills/04_HighPerComp.html",
-      "/skillset/skills/05_TechWriting.html"
+      "/skillset/skills/05_TechWriting.html",
+      "/skillset/skills/06_Research.html"
     ]
   },
   {
-    "listing": "/blog/index.html",
-    "items": []
-  },
-  {
-    "listing": "/portfolio/index.html",
+    "listing": "/portfolio/portfolio.html",
     "items": [
       "/portfolio/projects/05_Tmatrix.html",
       "/portfolio/projects/04_Nanoalloys.html",
@@ -22,5 +19,9 @@
       "/portfolio/projects/02_Nanofluidics.html",
       "/portfolio/projects/01_ClusterMelting.html"
     ]
+  },
+  {
+    "listing": "/blog/blog.html",
+    "items": []
   }
 ]
