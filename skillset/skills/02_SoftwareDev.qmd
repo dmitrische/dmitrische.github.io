@@ -2,3 +2,27 @@
 title: "Software development"
 description: "Designing, implementing, testing, and documenting software in multiple programming languages."
 ---
+___
+
+If computational modelling is my craft, then computational methods and software packages are my tools; and I believe that tools should be shared and reused whenever possible.
+
+Initially, as a graduate student, I saw coding more as a means to an end and a potentially reusable by-product of my research activity, but with experience I became more appreciative of software carpentry and developed an interest in writing more robust code that others could use with ease.
+
+## Early experience
+
+As a graduate student I've spent considerable effort implementing Bash and Perl scripts to pre-process input data and post-process the output from classical molecular dynamics (MD) simulations.
+
+However, my first serious programming project was in Fortran, and it consisted of two stages:
+
+1) implementing a three-body interatomic potential for an in-house MD code; and
+2) parallelizing the entire code through atom-based decomposition and using Message Passing Interface (MPI).
+
+Implementing   
+
+
+Having developed my own models and methods in code and then passed it on for others to use, as well as having contributed to a shared codebase in a multiple research groups, 
+
+As a computational modeller who enjoys implementing own models and methods in code, as well as relying on tools developed by others, I value  
+
+
+Less about a personal means of breaking down a problem, and more about building a reproducible product, often collaboratively as part of a group.

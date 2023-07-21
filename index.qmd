@@ -29,9 +29,9 @@ Welcome to my website!
 
 I am a computational modeller with PhD in physics and extensive postdoctoral experience in simulation-based research, mostly in the realm of nanoscale materials modelling. 
 
-After joining a fin-tech startup, my interests broadened to include agent-based modelling of socio-economic systems: markets, emissions trading schemes, and blockchain networks. 
+After joining a fin-tech startup, my interests broadened to include agent-based modelling of socio-economic systems: financial markets, emissions trading schemes, and blockchain networks. 
 
-To branch out even more, I intend to pursue a number of data science projects and use this website for (i) blogging about my learnings and (ii) showcasing some of my work. 
+To further expand my technical skills, I intend to pursue a number of data science projects and use this website for (i) blogging about my learnings and (ii) showcasing some of my work. 
 
 Please, feel free to download my [CV](assets/DmitriCV.pdf), find out more about my [skillset](skillset/skillset.qmd), explore my projects [portfolio](portfolio/portfolio.qmd), read my [blog](blog/blog.qmd), or reach out by [e-mail](mailto:dmitri.schebarchov@gmail.com).
 :::

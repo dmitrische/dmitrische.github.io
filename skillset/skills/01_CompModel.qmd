@@ -2,8 +2,9 @@
 title: "Computational modelling"
 description: "Using computers to simulate and study complex systems, ranging from nanoscale materials to market-based economies."
 ---
+___
+I genuinely enjoy using computers to simulate and study complex systems, and it is this enjoyment that has motivated me most so far in my career. I still find this fact surprising, because I was initially dissuaded from programming as a first-year undergraduate. Fortunately, my subsequent summer internships at Industrial Research Ltd drastically changed my perspective, setting me on course for a PhD in physics with strong focus on nanoscale materials modelling. 
 
-## Computational modelling
-I genuinely enjoy using computers to simulate and study complex systems, and it is this enjoyment that has motivated me most so far in my career. I still find it surprising, because I was initially dissuaded from programming as a first-year undergraduate. Fortunately, my subsequent summer internships at Industrial Research Ltd drastically changed my perspective, setting me on course for a PhD in physics with strong focus on nanoscale materials modelling. 
+To this day I see programming and implementing algorithms as an integral part of my process for breaking down complex problems into more manageable chunks. For instance, during my PhD, implementing my own Fortran subroutines in Fortran was instrumental in shedding new light on how metal nanoparticles can [melt](../../portfolio/projects/01_ClusterMelting.qmd) and [fill a capillary](../../portfolio/projects/02_Nanofluidics.qmd). More recently, implementing an [agent-based model of a minimal economy](../../portfolio/portfolio.qmd) with Python, in an object-oriented paradigm, helped me develop a clearer understanding of microeconomic drivers of trade and how a price can emerge within a market setting.
 
-To this day I see programming and implementing algorithms as an integral part of my process for breaking down complex problems into more manageable chunks. I relied on it to shed new light on how metal nanoparticles can [melt](../../portfolio/projects/01_ClusterMelting.qmd) and [fill a capillary](../../portfolio/projects/02_Nanofluidics.qmd) when not expected to. More recently, implementing an [agent-based model of a minimal economy](../../portfolio/index.qmd) in Python helped me develop a clearer understanding of what drives trade and how a price emerges within a market setting.    
+A laboratory for virtual experiments (simulation cartoon?)
