@@ -7,18 +7,25 @@
     "text": "Here you will find a set of what I consider to be my core skills and competencies. Click on any one for more detailed context with links to relevant projects in my portfolio.\n\n\n\n\n\n\n\nComputational modelling\n\n\nUsing computers to simulate and study complex systems, ranging from nanoscale materials to market-based economies.\n\n\n\n\n\n\n\n\n\n\nSoftware development\n\n\nDesigning, implementing, testing, and documenting software in multiple programming languages.\n\n\n\n\n\n\n\n\n\n\nData analysis\n\n\nInspecting, cleaning, transforming, modeling, and interpreting data with the goal of discovering useful information.\n\n\n\n\n\n\n\n\n\n\nHigh-performance computing\n\n\nUsing supercomputers and computer clusters to solve resource-intensive computational problems.\n\n\n\n\n\n\n\n\n\n\nCommunication\n\n\nDescribing or explaining complex and specialized information to audiences who may or may not be familiar with the subject matter.\n\n\n\n\n\n\n\n\n\n\nResearch\n\n\nSystematically pursuing answers to questions for the purposes of accumulating knowledge, solving problems, or developing products.\n\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "skillset/skills/02_SoftwareDev.html",
+    "href": "skillset/skills/02_SoftwareDev.html",
+    "title": "Software development",
+    "section": "",
+    "text": "If computational modelling is my craft, then computational methods and software packages are my tools; and I believe that tools should be shared and reused whenever possible.\nInitially, as a graduate student, I saw coding more as a means to an end and a potentially reusable by-product of my research activity, but with experience I became more appreciative of software carpentry and developed an interest in writing more robust code that others could use with ease."
+  },
+  {
+    "objectID": "skillset/skills/02_SoftwareDev.html#early-experience",
+    "href": "skillset/skills/02_SoftwareDev.html#early-experience",
+    "title": "Software development",
+    "section": "Early experience",
+    "text": "Early experience\nAs a graduate student I’ve spent considerable effort implementing Bash and Perl scripts to pre-process input data and post-process the output from classical molecular dynamics (MD) simulations.\nHowever, my first serious programming project was in Fortran, and it consisted of two stages:\n\nimplementing a three-body interatomic potential for an in-house MD code; and\nparallelizing the entire code through atom-based decomposition and using Message Passing Interface (MPI).\n\nImplementing\nHaving developed my own models and methods in code and then passed it on for others to use, as well as having contributed to a shared codebase in a multiple research groups,\nAs a computational modeller who enjoys implementing own models and methods in code, as well as relying on tools developed by others, I value\nLess about a personal means of breaking down a problem, and more about building a reproducible product, often collaboratively as part of a group."
+  },
+  {
     "objectID": "skillset/skills/01_CompModel.html",
     "href": "skillset/skills/01_CompModel.html",
     "title": "Computational modelling",
     "section": "",
-    "text": "I genuinely enjoy using computers to simulate and study complex systems, and it is this enjoyment that has motivated me most so far in my career. I still find it surprising, because I was initially dissuaded from programming as a first-year undergraduate. Fortunately, my subsequent summer internships at Industrial Research Ltd drastically changed my perspective, setting me on course for a PhD in physics with strong focus on nanoscale materials modelling.\nTo this day I see programming and implementing algorithms as an integral part of my process for breaking down complex problems into more manageable chunks. I relied on it to shed new light on how metal nanoparticles can melt and fill a capillary when not expected to. More recently, implementing an agent-based model of a minimal economy in Python helped me develop a clearer understanding of what drives trade and how a price emerges within a market setting."
-  },
-  {
-    "objectID": "skillset/skills/01_CompModel.html#computational-modelling",
-    "href": "skillset/skills/01_CompModel.html#computational-modelling",
-    "title": "Computational modelling",
-    "section": "",
-    "text": "I genuinely enjoy using computers to simulate and study complex systems, and it is this enjoyment that has motivated me most so far in my career. I still find it surprising, because I was initially dissuaded from programming as a first-year undergraduate. Fortunately, my subsequent summer internships at Industrial Research Ltd drastically changed my perspective, setting me on course for a PhD in physics with strong focus on nanoscale materials modelling.\nTo this day I see programming and implementing algorithms as an integral part of my process for breaking down complex problems into more manageable chunks. I relied on it to shed new light on how metal nanoparticles can melt and fill a capillary when not expected to. More recently, implementing an agent-based model of a minimal economy in Python helped me develop a clearer understanding of what drives trade and how a price emerges within a market setting."
+    "text": "I genuinely enjoy using computers to simulate and study complex systems, and it is this enjoyment that has motivated me most so far in my career. I still find this fact surprising, because I was initially dissuaded from programming as a first-year undergraduate. Fortunately, my subsequent summer internships at Industrial Research Ltd drastically changed my perspective, setting me on course for a PhD in physics with strong focus on nanoscale materials modelling.\nTo this day I see programming and implementing algorithms as an integral part of my process for breaking down complex problems into more manageable chunks. For instance, during my PhD, implementing my own Fortran subroutines in Fortran was instrumental in shedding new light on how metal nanoparticles can melt and fill a capillary. More recently, implementing an agent-based model of a minimal economy with Python, in an object-oriented paradigm, helped me develop a clearer understanding of microeconomic drivers of trade and how a price can emerge within a market setting.\nA laboratory for virtual experiments (simulation cartoon?)"
   },
   {
     "objectID": "portfolio/portfolio.html",
@@ -46,7 +53,7 @@
     "href": "index.html",
     "title": "Dmitri Schebarchov",
     "section": "",
-    "text": "GitHub\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Scholar\n  \n  \n    \n     Email\n  \n\n  \n  \nWelcome to my website!\nI am a computational modeller with PhD in physics and extensive postdoctoral experience in simulation-based research, mostly in the realm of nanoscale materials modelling.\nAfter joining a fin-tech startup, my interests broadened to include agent-based modelling of socio-economic systems: markets, emissions trading schemes, and blockchain networks.\nTo branch out even more, I intend to pursue a number of data science projects and use this website for (i) blogging about my learnings and (ii) showcasing some of my work.\nPlease, feel free to download my CV, find out more about my skillset, explore my projects portfolio, read my blog, or reach out by e-mail."
+    "text": "GitHub\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Scholar\n  \n  \n    \n     Email\n  \n\n  \n  \nWelcome to my website!\nI am a computational modeller with PhD in physics and extensive postdoctoral experience in simulation-based research, mostly in the realm of nanoscale materials modelling.\nAfter joining a fin-tech startup, my interests broadened to include agent-based modelling of socio-economic systems: financial markets, emissions trading schemes, and blockchain networks.\nTo further expand my technical skills, I intend to pursue a number of data science projects and use this website for (i) blogging about my learnings and (ii) showcasing some of my work.\nPlease, feel free to download my CV, find out more about my skillset, explore my projects portfolio, read my blog, or reach out by e-mail."
   },
   {
     "objectID": "blog/blog.html",
