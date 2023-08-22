@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dmitri Schebarchov">
+<meta name="description" content="Using Python to gather historical data on the market price of NZUs.">
+
+<title>Dmitri’s Website - Web-scraping for "carbon"</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-fixed">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target=""><i class="bi bi-file-person-fill" role="img">
+</i> 
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../assets/DmitriCV.pdf" rel="" target=""><i class="bi bi-file-pdf" role="img">
+</i> 
+ <span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../skillset/skillset.html" rel="" target=""><i class="bi bi-wrench-adjustable" role="img">
+</i> 
+ <span class="menu-text">Skillset</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../portfolio/portfolio.html" rel="" target=""><i class="bi bi-folder2-open" role="img">
+</i> 
+ <span class="menu-text">Portfolio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog/blog.html" rel="" target=""><i class="bi bi-pencil-square" role="img">
+</i> 
+ <span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dmitrische/dmitrische.github.io" rel="" target=""><i class="bi bi-code-slash" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#nzu-trading" id="toc-nzu-trading" class="nav-link active" data-scroll-target="#nzu-trading">NZU trading</a></li>
+  <li><a href="#carbon-news" id="toc-carbon-news" class="nav-link" data-scroll-target="#carbon-news">Carbon News</a></li>
+  <li><a href="#legal-concerns" id="toc-legal-concerns" class="nav-link" data-scroll-target="#legal-concerns">Legal concerns</a></li>
+  <li><a href="#content-inspection" id="toc-content-inspection" class="nav-link" data-scroll-target="#content-inspection">Content inspection</a></li>
+  <li><a href="#scraping-with-python" id="toc-scraping-with-python" class="nav-link" data-scroll-target="#scraping-with-python">Scraping with Python</a></li>
+  <li><a href="#dataset-comparison" id="toc-dataset-comparison" class="nav-link" data-scroll-target="#dataset-comparison">Dataset comparison</a></li>
+  <li><a href="#future-updates" id="toc-future-updates" class="nav-link" data-scroll-target="#future-updates">Future updates</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Web-scraping for "carbon"</h1>
+</div>
+
+<div>
+  <div class="description">
+    Using Python to gather historical data on the market price of NZUs.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dmitri Schebarchov </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Wednesday, 23 August 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p>This inaugural blog-post describes my first experience in web-scraping, which involved obtaining historical price data from publicly visible snippets of a pay-walled news website. The exercise was partly motivated by <a href="https://github.com/theecanmole"><span class="citation" data-cites="theecanmole">@theecanmole</span></a>’s GitHub <a href="https://github.com/theecanmole/nzu">repository</a> containing manually “web-scraped” New Zealand Unit (NZU) price data from 2010 onwards. I wanted to automate the process by implementing a scraper, mostly because it seemed like a good exercise and, to the best of my knowledge, nobody else had done it before and made the code publicly available. So, feel free to look at and reuse my <a href="https://github.com/dmitrische/nzu-market/tree/main/price-data-scrape">code</a>, but I will not dwell on it here. Instead, I will just outline my approach in words, after providing a bit more context and dispelling any legal concerns; and I will compare my scraped data with <span class="citation" data-cites="theecanmole">@theecanmole</span>’s.</p>
+<section id="nzu-trading" class="level2">
+<h2 class="anchored" data-anchor-id="nzu-trading">NZU trading</h2>
+<p>New Zealand operates a domestic emissions trading scheme (<a href="https://en.wikipedia.org/wiki/New_Zealand_Emissions_Trading_Scheme">NZ-ETS</a>) with NZU as the standardized tradeable unit (permitting the holder to emit one tonne of CO2-equivalent). While the primary market for NZUs started functioning only in 2021, when the first public auctions were held to set the price for newly-issued NZUs, unused NZUs have been resold on platforms like <a href="https://carbonmatch.co.nz/">CarbonMatch</a>, <a href="https://www.commtrade.co.nz/">CommTrade</a>, and even <a href="https://www.trademe.co.nz/business-farming-industry/carbon-credits/v-gallery?user_region=100&amp;user_district=0">TradeMe</a> since 2010 (if not earlier). While this secondary market for NZUs has been developing for over a decade now, <a href="https://www.carbonnews.co.nz/">Carbon News</a> and other news services have been providing comprehensive daily information on the progress, including regular updates on the market price movement.</p>
+</section>
+<section id="carbon-news" class="level2">
+<h2 class="anchored" data-anchor-id="carbon-news">Carbon News</h2>
+<p><a href="https://www.carbonnews.co.nz/">Carbon News</a> is described as “New Zealand’s only daily news service covering the carbon markets, climate change, sustainable business and the growth of the low-carbon economy”. It is a private business, so to read the published stories in full one must pay a subscription fee. However, some useful information can still be gleaned from headlines and short summaries visible to non-subscribers.</p>
+<p>The <a href="https://www.carbonnews.co.nz/tag.asp?tag=Jarden+NZ+Market+Report">Jarden NZ Market Report</a> section lists recent stories focusing on the price of NZUs traded on <a href="https://www.commtrade.co.nz/">CommTrade</a>. Each story (such as <a href="https://www.carbonnews.co.nz/story.asp?storyID=28274">this one</a>) reports on the latest “fixing”, i.e.&nbsp;the spot price, as well as the opening bid and offer prices.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/001_CarbonNewsStory.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>The price history plotted in the image accompanying each story covers only the previous six months, whereas Jarden NZ Market Report’s <a href="https://www.carbonnews.co.nz/tagarchive.asp?tag=Jarden+NZ+Market+Report">archive</a> dates back to 2008. To graph and analyze the entire price history, one could scrape all the publicly visible NZU prices with the corresponding dates, and save this data to a local file, say a CSV file with the following format:</p>
+<pre><code>date,price
+2023-07-24,47.25
+2023-07-25,50.00</code></pre>
+</section>
+<section id="legal-concerns" class="level2">
+<h2 class="anchored" data-anchor-id="legal-concerns">Legal concerns</h2>
+<p>Carbon News website’s <a href="https://www.carbonnews.co.nz/robots.txt">robots.txt</a> indicates that only a small number of user-agents have been explicitly disallowed from crawling, whereas everyone else should just use a crawl-delay of two seconds. This allowance suggests that the website creators do not object to the publicly visible content being scraped, and I did not find any statements in the Policies and Service sections that would point to the contrary. Hence, to the best of my knowledge and understanding, my scraping exercise does not entail illegal.</p>
+<p>I am aware that <a href="https://www.commtrade.co.nz/">CommTrade</a> <em>claim</em> some copyright, stating that “reproduction of any data or images on this site cannot be used without the permission of Jarden.” In fact, when I first became interested in historical data on the price of NZUs, I’ve actually emailed <code>carbon@jarden.co.nz</code> asking for it, and they offered it to me for a fee of $5k. However, I was not willing to pay this much (if anything), and I did not feel like bargaining. Instead, I turned this obstacle into an opportunity to develop my scraping skills, using a <em>different</em> website as my source. Later I felt vindicated after finding a <a href="https://www.exchange-data.com/closing-prices-and-other-stock-exchange-data-copyright-and-competition-law-issues/">report</a> from Exchange Data International (EDI), which concludes:</p>
+<blockquote class="blockquote">
+<p>“There is no credible basis for any stock exchange in the EU (or the US) to claim copyright in closing prices or indices. Even by the most indulgent standards, closing prices are below the standards of originality and substantiality required under copyright legislation, regardless of whether they are the product of algorithms or the actual final trading price of the day.”</p>
+</blockquote>
+<p>I think I agree with this conclusion and hope Jarden CommTrade rethink their data policy, if they haven’t already. In any case, back to legal scraping…</p>
+</section>
+<section id="content-inspection" class="level2">
+<h2 class="anchored" data-anchor-id="content-inspection">Content inspection</h2>
+<p>In general, data scraping involves parsing the HTML source code of a web page of interest, and in the present case we have two to begin with: <a href="https://www.carbonnews.co.nz/tag.asp?tag=Jarden+NZ+Market+Report">Jarden NZ Market Report</a> and its <a href="https://www.carbonnews.co.nz/tagarchive.asp?tag=Jarden+NZ+Market+Report">archive</a>. By scrolling through these two webpages one can glean all the information required to produce the desired CSV file: the date, the price, and the story URL.</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-center">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/001_Report_h1h2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-center">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/001_Report_h2h3.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Somewhat inconveniently, the date formatting is variable: showing just “Today” or the appropriate weekday (e.g.&nbsp;Thursday) for stories that are less than a week old, and the date in full (e.g.&nbsp;“25 Jul 23”) stated only for older stories.</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-center">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/001_Archive_h3.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-center">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/001_Archive_h3h4.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Much more inconvenient is the variation in how the spot price has been reported over time, systematically featuring in the headlines only since 22 Feb 2016. Extracting the spot price from hundreds of older archived stories actually requires opening and parsing the stories’ individual web pages. Adding to the inconvenience is that the format of the publicly visible summaries changed fairly inconsistently over time, especially in early years, raising the question of whether it is even possible to extract all the right price values using relatively simple algorithm logic.</p>
+<p>Using the browser’s inspection tool to examine the HTML source code of the Jarden NZ Market Report, we find a fairly tractable structure. The central listing of stories is associated with a <code>&lt;div&gt;</code> element of class <code>"StoryList"</code>. Inside this element, the latest headline in the listing is associated with the element tagged by <code>&lt;h1&gt;</code>, the following six headlines are each tagged by <code>&lt;h2&gt;</code>, and the remaining ones by <code>&lt;h3&gt;</code>; and all these elements have the same class name <code>"Headline"</code> attributed to them. The actual headline text is nested inside an <code>&lt;a&gt;</code> sub-element with an <code>href</code> attribute (providing a URL fragment directing to the full story). Furthermore, each and every headline element is followed by an accompanying <code>&lt;p&gt;</code> element containing the story’s brief summary.</p>
+<p>Inspection of the archive shows continuation of the same general pattern: first twenty stories in the archive are associated with <code>&lt;h3&gt;</code> elements (containing the headline) and accompanying <code>&lt;p&gt;</code> elements (containing the summary); while all older stories are tagged by <code>&lt;h4&gt;</code> and are not accompanied by <code>&lt;p&gt;</code> elements. For these older archived stories, the full date is embedded in the corresponding <code>&lt;h4&gt;</code> element but outside the internal <code>&lt;a&gt;</code> sub-element.</p>
+<p>HTML structure of each and every story’s web page is comparatively simple: the publicly visible text summary is spread over two consecutive <code>&lt;div&gt;</code> elements: one of class <code>"StoryFirstPara"</code>; and the other of class<code>"StorySecondPara"</code>.</p>
+</section>
+<section id="scraping-with-python" class="level2">
+<h2 class="anchored" data-anchor-id="scraping-with-python">Scraping with Python</h2>
+<p>Having gleaned the underlying HTML structure, I proceeded with the actual data scraping using Python in a Jupyter <a href="https://github.com/dmitrische/nzu-market/blob/main/price-data-scrape/data_scraper.ipynb">notebook</a>. I did it in three stages.</p>
+<p>First I scraped the date, headline, and URL for all the stories listed in the <a href="https://www.carbonnews.co.nz/tag.asp?tag=Jarden+NZ+Market+Report">Jarden NZ Market Report</a> and its <a href="https://www.carbonnews.co.nz/tagarchive.asp?tag=Jarden+NZ+Market+Report">archive</a>. I used a Python package called <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a> to parse the HTML and extract the text with the three relevant pieces of information.</p>
+<p>Then I wrote a custom function called <code>strings2date</code> to convert all the date strings into date objects using Python’s <code>datetime</code> module. This conversion enabled me to discard all the stories published prior to 14 May 2010, because we know that updates on the spot price have not been reported before then.</p>
+<p>The third and final stage involved extracting the spot price either from the headlines I have already just scraped, or from the text summaries scraped from the stories’ individual web pages, accessed via their respective URLs. I implemented the parsing logic for the headlines and the summaries in two different functions, <code>parse_headline</code> and <code>parse_summary</code>, with the latter being slightly more complicated, but both relying on standard string functions and searching for fairly simple patterns in the text.</p>
+<p>Again, feel free to inspect my Jupyter <a href="https://github.com/dmitrische/nzu-market/blob/main/price-data-scrape/data_scraper.ipynb">notebook</a> and file <a href="https://github.com/dmitrische/nzu-market/blob/main/price-data-scrape/scraping_functions.py">scraping_functions.py</a> for implementation details. In the remainder of this post I will just focus on the result and compare it with <span class="citation" data-cites="theecanmole">@theecanmole</span>’s raw data.</p>
+</section>
+<section id="dataset-comparison" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-comparison">Dataset comparison</h2>
+<p>Figure below shows a plot of 2145 datapoints (in red) that I’ve scraped from Carbon News, as well as a (blue) line tracing the 1653 datapoints in <span class="citation" data-cites="theecanmole">@theecanmole</span>’s dataset.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/001_nzu_price.svg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>It is reassuring to see that the two overlaid plots are almost indistinguishable, but not quite. Even though my dataset has more points in total, it is actually more sparse than <span class="citation" data-cites="theecanmole">@theecanmole</span>’s for years up to and including 2013, when <span class="citation" data-cites="theecanmole">@theecanmole</span> relied on multiple other sources.</p>
+<p>Surprisingly, my dataset contains no price values from 2012, even though some of <span class="citation" data-cites="theecanmole">@theecanmole</span>’s datapoints for that year are sourced from Carbon News. While it is entirely possible that my text parsing logic has missed some values, it also appears to be the case that some of the older market updates have not actually been archived. For example, <span class="citation" data-cites="theecanmole">@theecanmole</span>’s price value of $8.30 from 16 Dec 2011 cites a Carbon News article with unique storyID=5808 and a valid URL, but my crawling scraper failed to discover this URL, simply because the story is not listed on Jarden NZ Market Report Archive. This realization makes me even more appreciative of <span class="citation" data-cites="theecanmole">@theecanmole</span>’s efforts.</p>
+</section>
+<section id="future-updates" class="level2">
+<h2 class="anchored" data-anchor-id="future-updates">Future updates</h2>
+<p>Scraping NZU price history from Carbon News was intended as a one-off learning experience. However, I plan to regularly update my dataset as new daily prices are reported on Carbon News. In another post I will probably write about how the updating process could be automated, because it strikes me as another learning opportunity, potentially involving some cloud computing experience.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -22,6 +22,8 @@
   },
   {
     "listing": "/blog/blog.html",
-    "items": []
+    "items": [
+      "/blog/posts/001_nzu_price_scrape.html"
+    ]
   }
 ]
