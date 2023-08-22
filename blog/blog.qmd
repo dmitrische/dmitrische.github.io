@@ -1,16 +1,22 @@
 ---
 title: Blog
 comments: false
+listing: 
+    - id: posts
+      contents: posts
+      sort: 
+        - "date desc"
+        - "title asc"
+      image-align: left
+      categories: true
+      fields: [title, description, image]
 format: 
   html:
     page-layout: full
-listing: 
-  - id: posts
-    contents: posts
-    sort: 
-      - "date desc"
-      - "title asc"
-    categories: true
 ---
+Here you will find short pieces of writing summarizing isolated or immature bits of work, such as early prototypes or preliminary analyses, or even just initial thoughts on a subject matter.
 
-Blog posts coming!
+## Posts
+:::{#posts}
+
+:::

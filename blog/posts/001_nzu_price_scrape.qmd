@@ -1,7 +1,9 @@
 ---
-title: "NZU price data scraping"
+title: 'Web-scraping for \"carbon\"'
+description: "Using Python to gather historical data on the market price of NZUs."
+image: ../images/001_nzu_price.svg
 author: "Dmitri Schebarchov"
-date: "2023-08-09"
+date: "2023-08-23"
 ---
  
 This inaugural blog-post describes my first experience in web-scraping, which involved obtaining historical price data from publicly visible snippets of a pay-walled news website. The exercise was partly motivated by [@theecanmole](https://github.com/theecanmole)'s GitHub [repository](https://github.com/theecanmole/nzu) containing manually "web-scraped" New Zealand Unit (NZU) price data from 2010 onwards. I wanted to automate the process by implementing a scraper, mostly because it seemed like a good exercise and, to the best of my knowledge, nobody else had done it before and made the code publicly available. So, feel free to look at and reuse my [code](https://github.com/dmitrische/nzu-market/tree/main/price-data-scrape), but I will not dwell on it here. Instead, I will just outline my approach in words, after providing a bit more context and dispelling any legal concerns; and I will compare my scraped data with @theecanmole's.
@@ -73,12 +75,14 @@ The third and final stage involved extracting the spot price either from the hea
 Again, feel free to inspect my Jupyter [notebook](https://github.com/dmitrische/nzu-market/blob/main/price-data-scrape/data_scraper.ipynb) and file [scraping_functions.py](https://github.com/dmitrische/nzu-market/blob/main/price-data-scrape/scraping_functions.py) for implementation details. In the remainder of this post I will just focus on the result and compare it with @theecanmole's raw data. 
 
 ## Dataset comparison
-Figure below shows a plot of 2145 datapoints (in blue) that I've scraped from Carbon News, as well as a (red) line tracing the 1653 datapoints in @theecanmole's dataset.     
+Figure below shows a plot of 2145 datapoints (in red) that I've scraped from Carbon News, as well as a (blue) line tracing the 1653 datapoints in @theecanmole's dataset.     
 
 ![](../images/001_nzu_price.svg){fig-align="center"}
 
-It is reassuring to see that the two overlaid plots are almost indistinguishable, but not quite. Even though my dataset has more points in total, it is actually more sparse than @theecanmole's for years up to and including 2013, when @theecanmole relied on many other sources. 
+It is reassuring to see that the two overlaid plots are almost indistinguishable, but not quite. Even though my dataset has more points in total, it is actually more sparse than @theecanmole's for years up to and including 2013, when @theecanmole relied on multiple other sources. 
 
-Surprisingly, my dataset contains no price values from 2012, even though some of @theecanmole's datapoints for that year are sourced from Carbon News. While it is entirely possible that my parsing logic has missed some price values, it also appears to be the case that some of the older market updates have not actually been archived. For example, @theecanmole's price value of $8.30 from 16 Dec 2011 cites a Carbon News article with unique storyID=5808 and a valid URL, but my crawling scraper failed to discover this URL simply because the story is not listed on Jarden NZ Market Report Archive. 
+Surprisingly, my dataset contains no price values from 2012, even though some of @theecanmole's datapoints for that year are sourced from Carbon News. While it is entirely possible that my text parsing logic has missed some values, it also appears to be the case that some of the older market updates have not actually been archived. For example, @theecanmole's price value of $8.30 from 16 Dec 2011 cites a Carbon News article with unique storyID=5808 and a valid URL, but my crawling scraper failed to discover this URL, simply because the story is not listed on Jarden NZ Market Report Archive. This realization makes me even more appreciative of @theecanmole's efforts.
 
-That final realization makes me appreciate @theecanmole's efforts even more.
+## Future updates
+
+Scraping NZU price history from Carbon News was intended as a one-off learning experience. However, I plan to regularly update my dataset as new daily prices are reported on Carbon News. In another post I will probably write about how the updating process could be automated, because it strikes me as another learning opportunity, potentially involving some cloud computing experience.
