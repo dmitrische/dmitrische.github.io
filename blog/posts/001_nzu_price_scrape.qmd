@@ -64,7 +64,7 @@ HTML structure of each and every story's web page is comparatively simple: the p
 
 ## Scraping with Python
 
-Having gleaned the underlying HTML structure, I proceeded with the actual data scraping using Python in a Jupyter [notebook](https://github.com/dmitrische/nzu-market/blob/main/price-data-scrape/data_scraper.ipynb). I did it in three stages. 
+Having gleaned the underlying HTML structure, I proceeded with the actual data scraping using Python in a Jupyter [notebook](https://github.com/dmitrische/nzu-market/blob/main/price-data-scrape/webscraper.ipynb). I did it in three stages. 
 
 First I scraped the date, headline, and URL for all the stories listed in the [Jarden NZ Market Report](https://www.carbonnews.co.nz/tag.asp?tag=Jarden+NZ+Market+Report) and its [archive](https://www.carbonnews.co.nz/tagarchive.asp?tag=Jarden+NZ+Market+Report). I used a Python package called [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) to parse the HTML and extract the text with the three relevant pieces of information. 
 
@@ -72,7 +72,7 @@ Then I wrote a custom function called `strings2date` to convert all the date str
 
 The third and final stage involved extracting the spot price either from the headlines I have already just scraped, or from the text summaries scraped from the stories' individual web pages, accessed via their respective URLs. I implemented the parsing logic for the headlines and the summaries in two different functions, `parse_headline` and `parse_summary`, with the latter being slightly more complicated, but both relying on standard string functions and searching for fairly simple patterns in the text. 
 
-Again, feel free to inspect my Jupyter [notebook](https://github.com/dmitrische/nzu-market/blob/main/price-data-scrape/data_scraper.ipynb) and file [scraping_functions.py](https://github.com/dmitrische/nzu-market/blob/main/price-data-scrape/scraping_functions.py) for implementation details. In the remainder of this post I will just focus on the result and compare it with @theecanmole's raw data. 
+Again, feel free to inspect my Jupyter [notebook](https://github.com/dmitrische/nzu-market/blob/main/price-data-scrape/webscraper.ipynb) and file [scraping_functions.py](https://github.com/dmitrische/nzu-market/blob/main/price-data-scrape/scraping_functions.py) for implementation details. In the remainder of this post I will just focus on the result and compare it with @theecanmole's raw data. 
 
 ## Dataset comparison
 Figure below shows a plot of 2145 datapoints (in red) that I've scraped from Carbon News, as well as a (blue) line tracing the 1653 datapoints in @theecanmole's dataset.     
