@@ -123,7 +123,7 @@
     "href": "blog/posts/001_nzu_price_scrape.html#future-updates",
     "title": "Web-scraping for \"carbon\"",
     "section": "Future updates",
-    "text": "Future updates\nScraping NZU price history from Carbon News was intended as a one-off learning experience. However, I plan to regularly update my dataset as new daily prices are reported on Carbon News. In another post I will probably write about how the updating process could be automated, because it strikes me as another learning opportunity, potentially involving some cloud computing experience."
+    "text": "Future updates\nScraping NZU price history from Carbon News was intended as a one-off learning experience. However, I plan to regularly update my dataset as new daily prices are reported on the Jarden NZ Market Report. In another post I might write about how this updating process could be automated and deployed on AWS (using a free-tier EC2 instance), but until then I will simply be re-running the first two code cells of my Jupyter notebook."
   },
   {
     "objectID": "portfolio/projects/02_Nanofluidics.html",
