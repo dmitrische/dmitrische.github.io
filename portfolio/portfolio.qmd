@@ -17,12 +17,13 @@ format:
 Here you will find links to some of my currently ongoing projects on GitHub, followed by a listing of past (mostly academic) work with links to retrospective summaries.
 
 ## In progress
+- Data gathering, analysis, and modelling of carbon market price dynamics. See [repo](https://github.com/dmitrische/nzu-market) and [web-app](http://13.239.6.213:8501/) deployed on AWS.
+
+- Preliminary modelling and interactive calculation of carbon units earned from forestry in the NZ-ETS. See [repo](https://github.com/dmitrische/look-up-tables) and [Jupyter notebook](https://mybinder.org/v2/gh/ds656/look-up-tables.git/HEAD?labpath=iplot-mpi-tables.ipynb) deployed on Binder.
 
 - Python implementation of an agent-based model of a minimal market-based economy developed by Steilgitz *et al.*, with various extensions including emissions trading.
 
-- Data gathering, analysis, and modelling of carbon market price dynamics.
-
-- Simple web app for calculating carbon units earned from forestry in the NZ-ETS.
+- Preliminary exploration of the public Crash Analysis System (CAS) data for New Zealand. See GitHub [repo](https://github.com/dmitrische/cas-data-exploration) for details.
 
 ## Past work
 
