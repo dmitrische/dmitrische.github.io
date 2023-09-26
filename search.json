@@ -39,7 +39,7 @@
     "href": "portfolio/portfolio.html#in-progress",
     "title": "Projects",
     "section": "In progress",
-    "text": "In progress\n\nPython implementation of an agent-based model of a minimal market-based economy developed by Steilgitz et al., with various extensions including emissions trading.\nData gathering, analysis, and modelling of carbon market price dynamics.\nSimple web app for calculating carbon units earned from forestry in the NZ-ETS."
+    "text": "In progress\n\nData gathering, analysis, and modelling of carbon market price dynamics. See repo and web-app deployed on AWS.\nPreliminary modelling and interactive calculation of carbon units earned from forestry in the NZ-ETS. See repo and Jupyter notebook deployed on Binder.\nPython implementation of an agent-based model of a minimal market-based economy developed by Steilgitz et al., with various extensions including emissions trading.\nPreliminary exploration of the public Crash Analysis System (CAS) data for New Zealand. See GitHub repo for details."
   },
   {
     "objectID": "portfolio/portfolio.html#past-work",
